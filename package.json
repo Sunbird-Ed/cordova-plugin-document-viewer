@@ -1,0 +1,54 @@
+{
+  "name": "cordova-plugin-document-viewer",
+  "version": "1.0.2",
+  "description": "PDF Document viewer cordova plugin for iOS, Android and Windows 8.1 + 10",
+  "license": "MIT",
+  "author": "Felix Schauerte",
+  "bugs": {
+    "url": "https://github.com/sitewaerts/cordova-plugin-document-viewer/issues"
+  },
+  "scripts": {
+    "updateDependencies": "update_dependencies.bat && npm run build",
+    "build": "bash build.sh",
+    "prepare": "npm run build"
+  },
+  "cordova": {
+    "id": "cordova-plugin-document-viewer",
+    "platforms": [
+      "android",
+      "ios",
+      "windows"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sitewaerts/cordova-plugin-document-viewer.git"
+  },
+  "homepage": "https://github.com/sitewaerts/cordova-plugin-document-viewer#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-windows",
+    "pdf"
+  ],
+  "engines": {
+    "cordovaDependencies": {
+      "1.0.2": {
+        "cordova": ">=10.0.0",
+        "cordova-windows": ">=4.4.0",
+        "cordova-android": ">=9.0.0"
+      }
+    }
+  },
+  "devDependencies": {
+    "@types/angular": "^1.8.1",
+    "@types/angularjs": "^1.5.14-alpha",
+    "@types/pdfjs-dist": "^2.1.7",
+    "@types/winjs": "^4.4.0"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^2.9.359"
+  }
+}
